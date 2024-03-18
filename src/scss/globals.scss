@@ -1,0 +1,36 @@
+/* Hide scrollbar for IE, Edge add Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar {
+  ms &::-webkit-scrollbar-track {
+    background-color: #696cff;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #696cff;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #696cff;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+}
+
+.main-page-layout {
+  .content-inner-layout {
+    background-color: #eaedf7;
+    height: 100%;
+    padding: 16px;
+  }
+}
